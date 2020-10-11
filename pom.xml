@@ -27,6 +27,7 @@
         <module>detailcloudprovider</module>
         <module>detailcloudconsumer</module>
         <module>detailcloudSecurity</module>
+        <module>detailcloud-eureka</module>
     </modules>
 
     <!-- 会实际下载  jar, 子项目会继承这些依赖  -->
