@@ -24,7 +24,7 @@ public Book getBook(@PathVariable("id") Integer id){
 }
 
 
-@GetMapping("all")
+@GetMapping("findAll")
 public List<Book> findAll(){
     return bookService.findAll();
 }

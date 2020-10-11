@@ -26,6 +26,7 @@
         <module>detailcloudapi</module>
         <module>detailcloudprovider</module>
         <module>detailcloudconsumer</module>
+        <module>detailcloudSecurity</module>
     </modules>
 
     <!-- 会实际下载  jar, 子项目会继承这些依赖  -->
@@ -43,6 +44,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
     </dependencies>
 
     <!-- //只是对版本进行管理，不会实际引入jar,子项目继承时必须显示声明(在denpencies声明  -->
@@ -86,6 +88,11 @@
             <dependency>
                 <groupId>com.yc.Lwc</groupId>
                 <artifactId>detailcloudapi</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.yc.Lwc</groupId>
+                <artifactId>detailcloudSecurity</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
 

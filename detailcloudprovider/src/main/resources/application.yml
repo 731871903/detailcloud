@@ -1,6 +1,12 @@
 server:
   port: 8888     #http://localhost:8888
 spring:
+#  security:
+#    user:
+#      name: admin
+#      password: a
+#      roles:
+#        - USER
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
