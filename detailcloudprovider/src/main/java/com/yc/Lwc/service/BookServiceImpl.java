@@ -1,6 +1,4 @@
 package com.yc.Lwc.service;
-
-
 import com.yc.Lwc.bean.Book;
 import com.yc.Lwc.dao.BookMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,8 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author Liweicheng
- * @create 2020/10/8 - 14:28
+ * @author Liweic==0/8 - 14:28
  */
 @Service
 public class BookServiceImpl implements BookService {

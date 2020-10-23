@@ -1,5 +1,5 @@
 server:
-  port: 7001
+  port: 7003
 spring:
   security:
     user:
@@ -7,7 +7,7 @@ spring:
       password: a
 eureka:
   instance:
-    hostname: eureka1
+    hostname: eureka3
   client:
     fetch-registry: false  #设定不要去注册中心获取其他服务的地址，解决Eureka启动时报错
     register-with-eureka: false #是否当前客户端要注册到euraka

@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>detailcloud-eureka</artifactId>
-    <name>detailcloud-eureka</name>
+    <artifactId>detailcloud-eureka3</artifactId>
+    <name>detailcloud-eureka3</name>
 
     <dependencies>
         <dependency>
