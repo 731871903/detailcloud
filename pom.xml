@@ -28,16 +28,26 @@
         <module>detailcloudprovider2</module>
         <module>detailcloudprovider3</module>
         <module>detailcloudconsumer</module>
+        <module>detailcloudconsumerfeign</module>
         <module>detailcloudSecurity</module>
         <module>detailcloud-eureka</module>
         <module>detailcloud-eureka2</module>
         <module>detailcloud-eureka03</module>
+        <module>detailcloud-interface</module>
+        <module>detailcloudproviderhystrix</module>
+        <module>detailcloud-hystrix-dashboard</module>
+        <module>detailcloudprovider-user-hystrix</module>
+        <module>detailcloud-provider-user-hystrix</module>
+        <module>detailcloud-turbine</module>
+        <module>detailcloud-zuul-gateway</module>
 
 
     </modules>
 
     <!-- 会实际下载  jar, 子项目会继承这些依赖  -->
     <dependencies>
+
+
         <!-- 因为这里引入了 microservice-api ,所以要在父项目中指定 这个模块的版本，-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -55,6 +65,12 @@
     <!-- //只是对版本进行管理，不会实际引入jar,子项目继承时必须显示声明(在denpencies声明  -->
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.yc.Lwc</groupId>
+                <artifactId>detailcloud-interface</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
