@@ -13,7 +13,7 @@ mapper:
 spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
-   driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
+   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
    username: root   # 数据库用户名
    password: a    # 数据库连接密码
@@ -23,7 +23,7 @@ spring:
 
 logging:
   level:
-    com.yc.springcloud2.microserviceprovider: debug
+    com.yc.Lwc.dao: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
@@ -59,7 +59,7 @@ mapper:
 spring:
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource # 配置当前要使用的数据源的操作类型
-   driver-class-name: com.mysql.cj.jdbc.Driver # 配置MySQL的驱动程序类
+   driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
    username: root   # 数据库用户名
    password: a    # 数据库连接密码
