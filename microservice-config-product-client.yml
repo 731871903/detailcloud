@@ -16,14 +16,14 @@ spring:
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
    username: root   # 数据库用户名
-   password: a    # 数据库连接密码
+   password:      # 数据库连接密码
  application:
-   name: microservice-config-provider-hystrix-client
+   name: microservice-config-product-client
  profiles: dev
 
 logging:
   level:
-    com.yc.Lwc.dao: debug
+    com.yc.springcloud2.microserviceprovider: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
@@ -36,7 +36,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: detailcloudprovide
+  app.name: microservice-provider-product
   company.name: yc
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -62,14 +62,14 @@ spring:
    driver-class-name: com.mysql.jdbc.Driver # 配置MySQL的驱动程序类
    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Hongkong # 数据库连接地址
    username: root   # 数据库用户名
-   password: a    # 数据库连接密码
+   password:      # 数据库连接密码
  application:
-   name: microservice-config-provider-hystrix-client
+   name: microservice-config-product-client
  profiles: beta
 
 logging:
   level:
-    com.yc.Lwc.dao: debug
+    com.yc.springcloud2.microserviceprovider: debug
 
 eureka:
   client: # 客户端进行Eureka注册的配置
@@ -82,7 +82,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microservice-config-provider-hystrix-client
+  app.name: microservice-config-product-client
   company.name: yc
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
