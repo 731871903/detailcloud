@@ -18,7 +18,7 @@ spring:
    username: root   # 数据库用户名
    password: a    # 数据库连接密码
  application:
-   name: microservice-config-product-client
+   name: microservice-config-provider-hystrix-client
  profiles: dev
 
 logging:
@@ -36,7 +36,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microservice-provider-product
+  app.name: detailcloudprovide
   company.name: yc
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
@@ -64,7 +64,7 @@ spring:
    username: root   # 数据库用户名
    password: a    # 数据库连接密码
  application:
-   name: microservice-config-product-client
+   name: microservice-config-provider-hystrix-client
  profiles: beta
 
 logging:
@@ -82,7 +82,7 @@ eureka:
     lease-expiration-duration-in-seconds: 5  # 如果现在超过了5秒的间隔（默认是90秒）
 
 info:
-  app.name: microservice-config-product-client
+  app.name: microservice-config-provider-hystrix-client
   company.name: yc
   build.artifactId: $project.artifactId$
   build.modelVersion: $project.modelVersion$
